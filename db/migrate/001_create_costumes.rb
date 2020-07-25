@@ -11,6 +11,7 @@
 class CreateCostumes < ActiveRecord::Migration[5.2]
     def change
         create_table :costumes do |t|
+<<<<<<< HEAD
             t.string :name 
             t.string :price 
             t.string :size 
@@ -20,3 +21,16 @@ class CreateCostumes < ActiveRecord::Migration[5.2]
         end 
     end 
 end 
+=======
+        t.string :name
+        t.integer :price
+        t.string :image_url
+        t.float :size
+        
+        t.timestamps null: false
+     end
+    end
+    
+   
+end
+>>>>>>> b6041e4dcc8dae9dd28c54bf8a7e374f7aba890d
